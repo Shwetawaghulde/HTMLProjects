@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        
+            <h3>Enter your name:</h3>
+            <input type="text" id="sname">
+            <button type="submit" onclick="addstd()">Add</button>
+            <button onclick="Displaystd()">List of all students</button>
+        
+        <div id="ans">list</div>
+    </div>
+</body>
+<script>
+    let a =[];
+    function addstd(){
+        a.push(document.getElementById("sname").value);
+        document.getElementById("sname").value = "";
+    }
+    function Displaystd(){
+        // document.write(a,"<br>");
+        var temp = document.getElementById("ans");
+        temp.innerHTML = "list:<br>"; 
+        for(let i = 0; i<a.length; i++){
+            temp.innerHTML += a[i]+"<br>";
+        }
+      //  console.log(a);
+    }
+</script>
+</html>

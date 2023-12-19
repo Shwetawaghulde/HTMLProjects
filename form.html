@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form>
+        <div>
+            <label for="fname">Enter your name</label>
+            <input type="text" id="fname" pattern="[a-zA-z]{3,10}"><br>
+        </div>
+        <div>
+            <label for="mypass">Enter your password</label>
+            <input type="password" id="mypass" name="mypass"><br>
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="email" name="email" required>
+        </div>
+        
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Transgender">Transgender
+        </div>
+        <div>
+            <label>Select your menu: </label>
+            <input type="checkbox" name="menu" value="pizza">Pizza
+            <input type="checkbox" name="menu" value="burger">burger
+            <input type="checkbox" name="menu" value="coke">coke
+            <input type="checkbox" name="menu" value="fries">Fries
+        </div>
+        <div>
+            <label>Select your preferences: </label>
+            <select name="mymenu" multiple>
+                <option value="">Select your preferences:</option>
+                <option value="Italian">italian</option>
+                <option value="Mexican">mexican</option>
+                <option value="Indian">Indian</option>
+            </select>
+        </div>
+            <label>Please share your feedback: </label>
+            <textarea name="myfeed" cols="30" rows="10"></textarea>
+        <div>
+            <button type="submit">Submit</button><br>
+        </div>
+        <div>
+            <label>Select date of birth</label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <label>Upload your file</label>
+            <input type="file" name="profile">
+            <input type="color" name="">
+            <input type="range">
+            <input type="url">
+        </div>
+
+    </form>
+</body>
+</html>
